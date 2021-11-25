@@ -1,7 +1,6 @@
 import './App.css';
 import { Layout } from 'antd';
-import UserInterface from './Components/UserInterface';
-import Users from './Components/Users.js';
+import View from './Components/View';
 
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -13,7 +12,7 @@ function App() {
               <h1 style={{color : 'white'}}>Neosec  APP</h1>  
             </Header>
             <Content>
-                <Users />
+                <View />
             </Content>
             <Footer></Footer>
           </Layout> 
