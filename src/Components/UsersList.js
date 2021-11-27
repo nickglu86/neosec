@@ -5,11 +5,6 @@ const UsersList  = ({users, setUserToShow}) => {
     const { Meta } = Card;
     const { Title } = Typography;
     
-    const handleUserClick = (user) => {
-        console.log(user);
-        setUserToShow(user);
-    }
-
     return (
         <>
         <Title 
@@ -23,8 +18,8 @@ const UsersList  = ({users, setUserToShow}) => {
            return (
              <Card 
                     style={{ maxWidth: 500 , marginTop: 16 , cursor : "pointer"}}
-                    onClick={() =>handleUserClick(user)}
-                    id={index}
+                    onClick={() => setUserToShow(user)}
+                    key={index}
                     >
                <Meta
                  avatar={<Avatar src="https://joeschmoe.io/api/v1/random" />}
