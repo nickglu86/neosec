@@ -4,8 +4,8 @@ import { useState } from 'react/cjs/react.development';
  
 
 const DropDown = (props) => {
-    const {setEventsToShow , eventsToShow } = props;
-    const [numberOfEvents, setNumberOfEvents] = useState(eventsToShow);
+    const {setEventsToShow , amountOfEventToDisplay } = props;
+    const [numberOfEvents, setNumberOfEvents] = useState(amountOfEventToDisplay);
     
     const handleMenuClick = (e) => {
         let eventNumber = e.key;

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import UsersList from "./UsersList";
-import UserTimeline from "./UserTimeline";
+import EventsTimeline from "./EventsTimeline";
 
 const View = () => {
 
@@ -45,7 +45,7 @@ const View = () => {
             />
        )}
        {view === 'user-timeline' && (
-          <UserTimeline  
+          <EventsTimeline  
               userID={userToRender}
               userEvents={data}
                />
