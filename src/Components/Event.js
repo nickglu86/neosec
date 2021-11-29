@@ -9,7 +9,7 @@ const Event = ({ event, changeEventsView, mainEvent , setFocusedEvent }) => {
         ];
         const day = timestamp.slice(8,10) - 0;
         const month = monthNames[parseInt(timestamp.slice(5,7))-1];
-        return <div className="focus-event">{day} {month}</div>;
+        return <div className="fe-date">{day} {month}</div>;
     }
 
     const focusEventLabel = focusedEventClass ==='focused-event' ? getDate() : '';

@@ -7,9 +7,9 @@ const { Header, Footer, Content } = Layout;
 function App() {
   return (
     <div className="App">
-          <Layout style={{minHeight : '100vh'}}>
+          <Layout>
             <Header>
-              <h1 style={{color : 'white'}}>Neosec  APP</h1>  
+              <h1>Neosec  APP</h1>  
             </Header>
             <Content>
                 <View />
