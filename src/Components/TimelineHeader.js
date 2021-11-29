@@ -3,7 +3,6 @@ import { DownOutlined, UpOutlined } from '@ant-design/icons';
 import  '../Styles/TimelineHeader.css'
 
 const TimelineHeader = ({userID, arrowClick}) => {
-
     return (  
         <div className="timeline-header">
              <h2>{userID}</h2>
@@ -14,13 +13,12 @@ const TimelineHeader = ({userID, arrowClick}) => {
              <div className="timeline-bottom">
                 <div  className="arrows">           
                    <UpOutlined onClick={() => arrowClick('up')} />
-                    <DownOutlined  onClick={() => arrowClick('down')}/>
+                   <DownOutlined  onClick={() => arrowClick('down')}/>
                 </div>
                 <div>
                     <Switch /> 
                     <span>Alerts Only</span>
                 </div>
-
              </div>
         </div>
     );

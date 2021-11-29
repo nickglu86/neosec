@@ -11,12 +11,12 @@ const View = () => {
 
   const initData = () => {
     fetch('./data-set.json')
-      .then(function(response){
+      .then( response => {
         return response.json();
       })
-      .then(function(myJson) {
-        setdata(myJson);
-        let users = myJson.map( event => event.user_id)
+      .then( dataJson => {
+        setdata(dataJson);
+        let users = dataJson.map( event => event.user_id)
         setUsers(users.filter((value,index) => users.indexOf(value) === index));
       });
   }
