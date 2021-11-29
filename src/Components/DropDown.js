@@ -1,19 +1,16 @@
 import { Menu, Dropdown} from 'antd';
-import { useState } from 'react/cjs/react.development';
+import { useState } from 'react'; 
 
- 
-
-const DropDown = (props) => {
-    const {setEventsToShow , amountOfEventToDisplay } = props;
+const DropDown = ({setEventsToShow , amountOfEventToDisplay }) => {
     const [numberOfEvents, setNumberOfEvents] = useState(amountOfEventToDisplay);
     
-    const handleMenuClick = (e) => {
+    const handleDropdownClick = (e) => {
         let eventNumber = e.key;
         setNumberOfEvents(eventNumber);
         setEventsToShow(eventNumber)
       }
-    const menu = (
-        <Menu onClick={handleMenuClick}>
+    const dropdown = (
+        <Menu onClick={handleDropdownClick}>
           <Menu.Item key={10} >
            10
           </Menu.Item>
@@ -23,7 +20,7 @@ const DropDown = (props) => {
         </Menu>
       );
     return (
-        <Dropdown.Button overlay={menu} placement="bottomCenter">
+        <Dropdown.Button overlay={dropdown} placement="bottomCenter">
             Showing {numberOfEvents} Events
         </Dropdown.Button>
       );

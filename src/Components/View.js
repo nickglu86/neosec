@@ -9,14 +9,7 @@ const View = () => {
   const [view, setView] = useState('users-list');
   const [userToRender, setUserToRender] = useState(0);
   const initData = () => {
-    fetch('./data-set.json'
-    ,{
-      headers : { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-       }
-    }
-    )
+    fetch('./data-set.json')
       .then(function(response){
         return response.json();
       })

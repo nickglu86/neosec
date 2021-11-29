@@ -2,7 +2,7 @@ import './App.css';
 import { Layout } from 'antd';
 import View from './Components/View';
 
-const { Header, Footer, Sider, Content } = Layout;
+const { Header, Footer, Content } = Layout;
 
 function App() {
   return (

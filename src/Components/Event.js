@@ -1,18 +1,22 @@
 import {  Tag } from 'antd';
-const Event = (props) => {
-    const { event, changeEventsView, mainEvent , setFocusedEvent } = props;
+
+const Event = ({ event, changeEventsView, mainEvent , setFocusedEvent }) => {
     const {id, timestamp, method, endpoint_path} = event;
-    const focusedEventClass =  id == mainEvent ? 'focused-event' : '';
-    const monthNames = ["January", "February", "March", "April", "May", "June",
-                        "July", "August", "September", "October", "November", "December"
-                        ];
-    const dayString = timestamp.slice(8,10);
-    const day = dayString - 0;
-    const month = monthNames[parseInt(timestamp.slice(5,7))-1]
-    const focusEventLabel = focusedEventClass ==='focused-event' ? <div className="focus-event">{day} {month}</div>: '';
+    const focusedEventClass =  id === mainEvent ? 'focused-event' : '';
+    const getDate = () => {
+        const monthNames = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+        ];
+        const day = timestamp.slice(8,10) - 0;
+        const month = monthNames[parseInt(timestamp.slice(5,7))-1];
+        return <div className="focus-event">{day} {month}</div>;
+    }
+
+    const focusEventLabel = focusedEventClass ==='focused-event' ? getDate() : '';
     if(focusedEventClass ==='focused-event'){ 
         setFocusedEvent(event);
     }
+
     return (  
         <>
             <div  

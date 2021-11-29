@@ -4,20 +4,24 @@ import { Card, Avatar, Typography } from 'antd';
 const UsersList  = ({users, setUserToShow}) => {
     const { Meta } = Card;
     const { Title } = Typography;
-    
+    const titleStyle  ={ width: 'auto', margin : 20 , textAlign : 'center'};
+    const userListStyle  = { display : 'flex', flexDirection : 'column' , alignItems : "center"};
+    const cardStyle  =  { maxWidth: 500 , marginTop: 16 , cursor : "pointer"};
+  
+   
     return (
         <>
         <Title 
              level={3}
-             style={{ width: 'auto', margin : 20 , textAlign : 'center'}}
+             style={titleStyle}
              >
              Users List
        </Title>
-       <div style={{ display : 'flex', flexDirection : 'column' , alignItems : "center"}}>
+       <div style={userListStyle}>
          {users.map(  (user, index) =>{
            return (
              <Card 
-                    style={{ maxWidth: 500 , marginTop: 16 , cursor : "pointer"}}
+                    style={cardStyle}
                     onClick={() => setUserToShow(user)}
                     key={index}
                     >

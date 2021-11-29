@@ -14,8 +14,8 @@ const EventsTimeline = ({userID, userEvents }) => {
     const [focusedEvent, setFocusedEvent] = useState({});
     
     const updateEventsToView = (newFirstEventIndex) => {
-        const newArr = getNewEventsArr(newFirstEventIndex, newFirstEventIndex + amountOfEventToDisplay);
-        setEventsToDisplay([... newArr]);
+        const NewEventsArr = getNewEventsArr(newFirstEventIndex, newFirstEventIndex + amountOfEventToDisplay);
+        setEventsToDisplay([...NewEventsArr]);
     }
  
 
