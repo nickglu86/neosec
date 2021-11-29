@@ -2,6 +2,7 @@ import { useState } from "react";
 import Event from "./Event";
 import DropDown from "./DropDown";
 import TimelineHeader from "./TimelineHeader";
+import  '../Styles/EventsTimeline.css'
 
 const EventsTimeline = ({userID, userEvents }) => {    
     const getNewEventsArr = (firstEventI, lastEventI) =>{

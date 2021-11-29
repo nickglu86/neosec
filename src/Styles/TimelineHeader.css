@@ -1,0 +1,66 @@
+
+/* TimeLine Header */
+
+.timeline-header h2 {
+	background-color: #fcfcfc;
+	color: #637fce;
+	text-align: center;
+	padding: 10px 0;
+}
+
+button.ant-btn.ant-btn-primary {
+	background-color: #aab9e3;
+	border-color: initial;
+	color: white;
+	border-radius: 3px;
+}
+
+.timeline-top {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0;
+	border-bottom: 1px solid #d7def1;
+}
+
+.timeline-top h3 {
+	font-size: 23px;
+	padding-left: 5px;
+}
+
+.timeline-bottom {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 12px 0;
+}
+
+.timeline-bottom button {
+	margin-right: 12px;
+}
+
+.arrows {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	left: -100px;
+	top: 200px;
+	padding-left: 37px;
+}
+
+.arrows svg {
+	height: 20px;
+	width: 20px;
+	margin: 12px 0;
+}
+
+@media only screen and (max-width: 768px) {
+	.arrows {
+		position: relative;
+		top: initial;
+		left: initial;
+	}
+	.timeline-bottom {
+		justify-content: space-between;
+	}
+}

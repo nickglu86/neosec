@@ -8,6 +8,7 @@ const View = () => {
   const [users, setUsers] = useState([]);
   const [view, setView] = useState('users-list');
   const [userToRender, setUserToRender] = useState(0);
+
   const initData = () => {
     fetch('./data-set.json')
       .then(function(response){
@@ -32,16 +33,16 @@ const View = () => {
   return ( 
     <main>
        {view === 'users-list' && (
-           <UsersList 
+            <UsersList 
               users={users} 
               setUserToShow={setUserToShow}
             />
        )}
        {view === 'user-timeline' && (
-          <EventsTimeline  
+            <EventsTimeline  
               userID={userToRender}
               userEvents={data}
-               />
+            />
        )}
     </main>
    );

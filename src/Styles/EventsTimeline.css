@@ -1,0 +1,91 @@
+
+/* Events Timeline */
+
+
+.timeline {
+	margin: 0 auto;
+	width: 460px;
+	max-width: 96%;
+}
+
+.event {
+	display: flex;
+	justify-content: space-around;
+	cursor: pointer;
+	height: 40px;
+	line-height: 40px;
+}
+
+.focused-event {
+	background-color: #edf0f9;
+}
+
+.timestamp {
+	margin-right: 10px;
+}
+
+.circle {
+	position: relative;
+	height: 40px;
+	width: 10px;
+	border-left: 1px dashed #5d7bcd;
+}
+
+.circle div {
+	position: absolute;
+	left: -6px;
+	width: 11px;
+	height: 11px;
+	margin-top: 15px;
+	background-color: #fff;
+	border: 2px solid transparent;
+	border-radius: 100px;
+	color: #5574ca;
+	border-color: #5574ca;
+}
+
+.fe-date {
+	background-color: #f1f1f1;
+	padding: 4px 10px;
+	margin: 2px 0 2px 33px;
+	width: 95px;
+	font-weight: 600;
+}
+
+.method {
+	width: 90px;
+}
+
+.post .ant-tag {
+	color: #a5dbbe;
+	border-color: #a5dbbe;
+}
+
+.get .ant-tag {
+	color: #9dd3eb;
+	border-color: #9dd3eb;
+}
+
+.delete .ant-tag {
+	color: #cbcf39;
+	border-color: #cbcf39;
+}
+
+.put .ant-tag {
+	color: #f7ca90;
+	border-color: #f7ca90;
+}
+
+.auth .ant-tag {
+	color: #ada9db;
+	border-color: #ada9db;
+}
+
+.method .ant-tag {
+	border-radius: 10px;
+	line-height: 13px;
+}
+
+.path {
+	width: 180px;
+}

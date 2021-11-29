@@ -1,5 +1,6 @@
 import { Button, Switch } from 'antd';
 import { DownOutlined, UpOutlined } from '@ant-design/icons';
+import  '../Styles/TimelineHeader.css'
 
 const TimelineHeader = ({userID, arrowClick}) => {
 

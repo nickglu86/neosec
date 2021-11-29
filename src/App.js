@@ -1,4 +1,4 @@
-import './App.css';
+import './Styles/App.css';
 import { Layout } from 'antd';
 import View from './Components/View';
 

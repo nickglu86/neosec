@@ -1,0 +1,10 @@
+/* Main Layout */
+
+section.ant-layout {
+	background-color: #fff;
+    min-height: 100vh;
+}
+
+section.ant-layout h1{
+    color: white;
+}
