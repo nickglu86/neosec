@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/neosec/static/css/main.9c69e77e.chunk.css",
+    "main.js": "/neosec/static/js/main.356e7e62.chunk.js",
+    "main.js.map": "/neosec/static/js/main.356e7e62.chunk.js.map",
+    "runtime-main.js": "/neosec/static/js/runtime-main.217749c9.js",
+    "runtime-main.js.map": "/neosec/static/js/runtime-main.217749c9.js.map",
+    "static/css/2.a95be28f.chunk.css": "/neosec/static/css/2.a95be28f.chunk.css",
+    "static/js/2.03000481.chunk.js": "/neosec/static/js/2.03000481.chunk.js",
+    "static/js/2.03000481.chunk.js.map": "/neosec/static/js/2.03000481.chunk.js.map",
+    "index.html": "/neosec/index.html",
+    "static/css/2.a95be28f.chunk.css.map": "/neosec/static/css/2.a95be28f.chunk.css.map",
+    "static/css/main.9c69e77e.chunk.css.map": "/neosec/static/css/main.9c69e77e.chunk.css.map",
+    "static/js/2.03000481.chunk.js.LICENSE.txt": "/neosec/static/js/2.03000481.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.217749c9.js",
+    "static/css/2.a95be28f.chunk.css",
+    "static/js/2.03000481.chunk.js",
+    "static/css/main.9c69e77e.chunk.css",
+    "static/js/main.356e7e62.chunk.js"
+  ]
+}
